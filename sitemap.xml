@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  TODO — Faza 4: înlocuiește TODO-domain.netlify.app cu domeniul real
+  (sau cu domeniul custom, când e conectat) și adaugă <lastmod> pe fiecare
+  <url> odată ce paginile de case study din Faza 3 există.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://TODO-domain.netlify.app/</loc>
+  </url>
+  <url>
+    <loc>https://TODO-domain.netlify.app/work/</loc>
+  </url>
+  <url>
+    <loc>https://TODO-domain.netlify.app/about/</loc>
+  </url>
+</urlset>
