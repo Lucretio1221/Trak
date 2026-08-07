@@ -293,6 +293,7 @@ button:focus-visible,
   letter-spacing: -0.01em;
   color: var(--ink);
   min-width: 0;
+  transition: color 0.15s ease;
 }
 
 .menu-line__dots {
@@ -300,6 +301,7 @@ button:focus-visible,
   min-width: 2rem;
   border-bottom: 1px dotted var(--stone);
   transform: translateY(-0.28em);
+  transition: border-color 0.15s ease;
 }
 
 .menu-line__value {
@@ -354,6 +356,11 @@ a.menu-line:hover .menu-line__dots {
   gap: var(--space-lg);
 }
 
+.proof-card {
+  display: block;
+  text-decoration: none;
+}
+
 .proof-card__media {
   aspect-ratio: 4 / 3;
   background: var(--paper-warm);
@@ -368,6 +375,19 @@ a.menu-line:hover .menu-line__dots {
   letter-spacing: 0.1em;
   text-align: center;
   padding: var(--space-sm);
+  transition: border-color 0.15s ease;
+}
+
+.proof-card:hover .proof-card__media {
+  border-color: var(--amber);
+}
+
+.proof-card:hover .menu-line__name {
+  color: var(--ink-soft);
+}
+
+.proof-card:hover .menu-line__dots {
+  border-bottom-color: var(--amber);
 }
 
 /* ---------- Servicii ---------- */
@@ -427,12 +447,12 @@ a.menu-line:hover .menu-line__dots {
   margin-top: var(--space-sm);
 }
 
-.case-body ul li {
+.case-body ul:not(.stack-list) li {
   padding-left: 1.25em;
   position: relative;
 }
 
-.case-body ul li::before {
+.case-body ul:not(.stack-list) li::before {
   content: "";
   position: absolute;
   left: 0;
@@ -442,7 +462,7 @@ a.menu-line:hover .menu-line__dots {
   background: var(--amber);
 }
 
-.case-body ul li + li {
+.case-body ul:not(.stack-list) li + li {
   margin-top: var(--space-2xs);
 }
 
@@ -500,6 +520,16 @@ a.menu-line:hover .menu-line__dots {
 
 .work-list__item:last-child {
   border-bottom: var(--hairline);
+}
+
+.work-list__item .menu-line {
+  margin-inline: calc(var(--space-sm) * -1);
+  padding-inline: var(--space-sm);
+  transition: background-color 0.15s ease;
+}
+
+.work-list__item .menu-line:hover {
+  background: var(--paper-warm);
 }
 
 /* ---------- Responsive ---------- */
