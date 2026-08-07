@@ -195,6 +195,11 @@ button:focus-visible,
   font-size: var(--fs-300);
   letter-spacing: -0.01em;
   text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.brand:hover {
+  color: var(--ink-soft);
 }
 
 .site-nav {
@@ -209,6 +214,7 @@ button:focus-visible,
   letter-spacing: 0.1em;
   text-decoration: none;
   border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease;
 }
 
 .site-nav a:hover,
@@ -225,6 +231,11 @@ button:focus-visible,
 .site-footer a {
   color: var(--paper);
   text-decoration-color: var(--stone);
+  transition: text-decoration-color 0.15s ease;
+}
+
+.site-footer a:hover {
+  text-decoration-color: var(--amber);
 }
 
 .site-footer__inner {
@@ -268,6 +279,13 @@ button:focus-visible,
   text-decoration: none;
 }
 
+.menu-line__index {
+  font-family: var(--font-mono);
+  font-size: var(--fs-000);
+  color: var(--stone);
+  min-width: 1.5em;
+}
+
 .menu-line__name {
   font-family: var(--font-display);
   font-weight: 500;
@@ -302,9 +320,21 @@ a.menu-line:hover .menu-line__dots {
 }
 
 /* ---------- Hero ---------- */
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.75rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .hero__headline {
   font-size: var(--fs-700);
   max-width: 20ch;
+  animation: rise-in 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .hero__sub {
@@ -313,6 +343,8 @@ a.menu-line:hover .menu-line__dots {
   color: var(--ink-soft);
   margin-top: var(--space-md);
   max-width: 48ch;
+  animation: rise-in 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: 0.12s;
 }
 
 /* ---------- Grilă de proiecte ---------- */
@@ -436,7 +468,8 @@ a.menu-line:hover .menu-line__dots {
 /* ---------- TODO — marcaj vizibil, amber doar ca linie ---------- */
 .todo {
   border-left: 3px solid var(--amber);
-  padding-left: var(--space-sm);
+  background: var(--paper-warm);
+  padding: var(--space-sm) var(--space-md);
   color: var(--ink-soft);
 }
 
