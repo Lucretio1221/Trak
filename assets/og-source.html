@@ -1,0 +1,82 @@
+<!--
+  Sursa imaginii de preview (Open Graph), 1200x630.
+  Nu e o pagina publica - foloseste styles.css ca sa mosteneasca exact
+  fonturile si culorile site-ului, deci preview-ul nu poate iesi din
+  design. Regenerare dupa ce se schimba ceva vizual:
+    python3 -m http.server 8811
+    <screenshot 1200x630 la /assets/og-source.html>  ->  assets/images/og-default.png
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="styles.css">
+<style>
+  html, body { margin: 0; padding: 0; }
+  body {
+    width: 1200px;
+    height: 630px;
+    background: var(--paper);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 72px 88px;
+    box-sizing: border-box;
+  }
+  .og-top { display: flex; justify-content: space-between; align-items: baseline; }
+  .og-mark {
+    font-family: var(--font-mono);
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ink-soft);
+  }
+  .og-name {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 108px;
+    line-height: 1.02;
+    letter-spacing: -0.03em;
+    color: var(--ink);
+    margin: 0;
+  }
+  .og-line {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    margin-top: 44px;
+  }
+  .og-line__label {
+    font-family: var(--font-mono);
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ink-soft);
+    white-space: nowrap;
+  }
+  .og-line__dots {
+    flex: 1 1 auto;
+    border-bottom: 2px dotted var(--stone);
+    transform: translateY(-0.28em);
+  }
+  .og-rule { height: 6px; background: var(--amber); width: 132px; }
+</style>
+</head>
+<body>
+  <div class="og-top">
+    <span class="og-mark">Portfolio</span>
+    <span class="og-mark">Web development</span>
+  </div>
+
+  <div>
+    <div class="og-rule"></div>
+    <p class="og-name">Cuciuvan<br>Lucas-Florian</p>
+    <div class="og-line">
+      <span class="og-line__label">Selected work</span>
+      <span class="og-line__dots"></span>
+      <span class="og-line__label">Case studies</span>
+    </div>
+  </div>
+</body>
+</html>

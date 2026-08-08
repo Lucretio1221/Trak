@@ -4,11 +4,36 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cuciuvan Lucas-Florian — TODO: one-line positioning</title>
-  <meta name="description" content="TODO: meta description — Faza 4.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500&family=Source+Serif+4:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <meta name="description" content="TODO: meta description — o propoziție, ce fac / pentru cine / cu ce rezultat. Se scrie odată cu headline-ul.">
+  <link rel="canonical" href="https://TODO-domain.netlify.app/">
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#123A2E">
+
+  <!-- Fonturi self-hostate: fără request extern, fără stylesheet care blochează
+       randarea. Preîncărcăm doar cele două fețe de pe primul ecran. -->
+  <link rel="preload" href="/assets/fonts/familjen-grotesk-500-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/source-serif-4-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/styles.css">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://TODO-domain.netlify.app/">
+  <meta property="og:title" content="Cuciuvan Lucas-Florian — TODO: one-line positioning">
+  <meta property="og:description" content="TODO: meta description — o propoziție, ce fac / pentru cine / cu ce rezultat. Se scrie odată cu headline-ul.">
+  <meta property="og:image" content="https://TODO-domain.netlify.app/assets/images/og-default.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Cuciuvan Lucas-Florian",
+    "url": "https://TODO-domain.netlify.app/"
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -38,8 +63,18 @@
     <!-- Proiecte -->
     <section class="section section--divider">
       <div class="wrap">
-        <span class="eyebrow">Selected work</span>
+        <h2 class="eyebrow">Selected work</h2>
 
+        <!-- Când vin screenshot-urile reale, fiecare .proof-card__media devine:
+             <img class="proof-card__media"
+                  src="/assets/images/SLUG-card-800.webp"
+                  srcset="/assets/images/SLUG-card-400.webp 400w,
+                          /assets/images/SLUG-card-800.webp 800w"
+                  sizes="(max-width: 860px) 100vw, 33vw"
+                  width="800" height="600" loading="lazy" decoding="async"
+                  alt="TODO: ce se vede concret">
+             width/height = dimensiunile intrinseci reale, în raport 4/3 ca
+             placeholder-ul, ca să nu se miște layout-ul la încărcare. -->
         <div class="proof-grid">
           <article>
             <a class="proof-card" href="/work/cuttracker/">
@@ -83,7 +118,7 @@
     <!-- Ce ofer -->
     <section class="section section--divider">
       <div class="wrap">
-        <span class="eyebrow">What I offer</span>
+        <h2 class="eyebrow">What I offer</h2>
 
         <div class="service-list">
           <div class="service-list__item todo">TODO: service point #1</div>
@@ -97,14 +132,14 @@
 
   <footer class="site-footer">
     <div class="wrap site-footer__inner">
-      <span class="eyebrow eyebrow--on-dark">Contact</span>
+      <h2 class="eyebrow eyebrow--on-dark">Contact</h2>
       <p class="site-footer__email todo-inline">
         <a href="mailto:TODO@example.com">TODO@example.com</a>
       </p>
       <p class="site-footer__meta todo-inline">TODO: location / availability line.</p>
 
-      <div class="site-footer__ro">
-        <span class="eyebrow eyebrow--on-dark">Pentru clienți din România</span>
+      <div class="site-footer__ro" lang="ro">
+        <h2 class="eyebrow eyebrow--on-dark">Pentru clienți din România</h2>
         <p class="todo-inline">TODO: variantă scurtă în română a secțiunii de servicii/contact.</p>
       </div>
     </div>

@@ -9,6 +9,94 @@
   verticală — ca să nu se anuleze reciproc cu regulile de layout pe clase.
 */
 
+/* ---------- Fonturi (self-hosted, zero request extern, swap) ----------
+   Descărcate din Google Fonts și servite local: elimină cele două
+   handshake-uri către fonts.googleapis.com / fonts.gstatic.com și
+   stylesheet-ul extern care bloca randarea. Browserul descarcă un
+   fișier doar dacă weight-ul ȘI unicode-range-ul chiar sunt folosite,
+   deci latin-ext se ia doar pe paginile cu diacritice.
+*/
+
+/* Familjen Grotesk 500 — latin */
+@font-face {
+  font-family: 'Familjen Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('fonts/familjen-grotesk-500-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Familjen Grotesk 500 — latin-ext */
+@font-face {
+  font-family: 'Familjen Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('fonts/familjen-grotesk-500-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* IBM Plex Mono 400 — latin */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/ibm-plex-mono-400-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* IBM Plex Mono 400 — latin-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/ibm-plex-mono-400-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Source Serif 4 400 — latin */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/source-serif-4-400-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Source Serif 4 400 — latin-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/source-serif-4-400-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Source Serif 4 600 — latin */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('fonts/source-serif-4-600-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Source Serif 4 600 — latin-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('fonts/source-serif-4-600-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
 /* ---------- Tokens ---------- */
 :root {
   color-scheme: light;
@@ -20,6 +108,10 @@
   --paper-warm: #EEEFE9;
   --amber: #F0A500;
   --stone: #C9C6BC;
+  /* Varianta lizibilă a lui stone. stone pur dă 1.59:1 pe hârtie — bun
+     pentru hairlines și puncte decorative, prea slab oriunde un semn
+     chiar trebuie citit (ex. separatorul dintre tehnologii). 3.93:1. */
+  --stone-deep: #7F7B70;
 
   /* Fonturi */
   --font-display: "Familjen Grotesk", "Helvetica Neue", Arial, sans-serif;
@@ -46,6 +138,13 @@
 
   --content-max: 68rem;
   --hairline: 1px solid var(--stone);
+
+  /* Inelul de focus. Amber pe fundal deschis dă 1.94:1 — sub pragul de
+     3:1 cerut pentru indicatori non-text — deci pe hârtie folosim ink
+     (11.69:1). Pe banda închisă ink ar fi invizibil, așa că acolo
+     tokenul se inversează în amber (6.04:1 pe ink) și accentul de firmă
+     rămâne prezent exact unde trece contrastul. */
+  --focus-ring: var(--ink);
 }
 
 /* ---------- Reset minimal ---------- */
@@ -102,11 +201,17 @@ h1 { letter-spacing: -0.02em; }
 h2 { letter-spacing: -0.015em; }
 
 /* ---------- Motion ---------- */
+/* Plasă de siguranță pentru orice se adaugă mai târziu. Include și
+   animation-delay: fără el, o animație cu fill-mode `both` și delay
+   rămâne blocată în starea inițială (deseori opacity: 0) exact la
+   utilizatorii care au cerut mai puțină mișcare. */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
     scroll-behavior: auto !important;
   }
 }
@@ -115,7 +220,7 @@ h2 { letter-spacing: -0.015em; }
 a:focus-visible,
 button:focus-visible,
 [tabindex]:focus-visible {
-  outline: 2px solid var(--amber);
+  outline: 2px solid var(--focus-ring);
   outline-offset: 3px;
 }
 
@@ -157,10 +262,15 @@ button:focus-visible,
 }
 
 /* ---------- Eyebrow / utility mono ---------- */
+/* Eyebrow. Când e h2 (titlu de secțiune) trebuie să anuleze explicit
+   font-weight/line-height moștenite de la regula h1..h4 — mono e
+   self-hostat doar la 400, iar 500 ar fi sintetizat ca faux-bold. */
 .eyebrow {
   display: block;
   font-family: var(--font-mono);
   font-size: var(--fs-000);
+  font-weight: 400;
+  line-height: 1.4;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--ink-soft);
@@ -226,6 +336,7 @@ button:focus-visible,
 .site-footer {
   background: var(--ink);
   color: var(--paper);
+  --focus-ring: var(--amber);
 }
 
 .site-footer a {
@@ -282,7 +393,7 @@ button:focus-visible,
 .menu-line__index {
   font-family: var(--font-mono);
   font-size: var(--fs-000);
-  color: var(--stone);
+  color: var(--ink-soft);
   min-width: 1.5em;
 }
 
@@ -322,21 +433,9 @@ a.menu-line:hover .menu-line__dots {
 }
 
 /* ---------- Hero ---------- */
-@keyframes rise-in {
-  from {
-    opacity: 0;
-    transform: translateY(0.75rem);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 .hero__headline {
   font-size: var(--fs-700);
   max-width: 20ch;
-  animation: rise-in 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .hero__sub {
@@ -345,8 +444,37 @@ a.menu-line:hover .menu-line__dots {
   color: var(--ink-soft);
   margin-top: var(--space-md);
   max-width: 48ch;
-  animation: rise-in 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
-  animation-delay: 0.12s;
+}
+
+/* Momentul orchestrat de la încărcare — singurul din tot site-ul.
+
+   Declarat DOAR în no-preference, nu neutralizat ulterior în reduce.
+   Motiv concret: animația are fill-mode `both`, deci starea `from`
+   (opacity: 0) se aplică înainte de start. Resetul obișnuit cu
+   `animation-duration: 0.01ms !important` nu atinge `animation-delay`,
+   așa că headline-ul rămânea invizibil pentru exact utilizatorii care
+   au cerut mai puțină mișcare. Aici animația pur și simplu nu există
+   dacă mișcarea nu e binevenită, iar textul e vizibil din primul frame. */
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes rise-in {
+    from {
+      opacity: 0;
+      transform: translateY(0.75rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hero__headline {
+    animation: rise-in 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .hero__sub {
+    animation: rise-in 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-delay: 0.12s;
+  }
 }
 
 /* ---------- Grilă de proiecte ---------- */
@@ -424,6 +552,14 @@ a.menu-line:hover .menu-line__dots {
   padding-bottom: 0.15em;
 }
 
+/* Aceleași clase funcționează și ca placeholder (div) și ca imagine reală
+   (img) — aspect-ratio ține locul rezervat în ambele cazuri, deci trecerea
+   de la TODO la captura reală nu mișcă layout-ul. */
+img.case-shot,
+img.proof-card__media {
+  object-fit: cover;
+}
+
 .case-shot {
   width: 100%;
   aspect-ratio: 16 / 10;
@@ -476,7 +612,7 @@ a.menu-line:hover .menu-line__dots {
 
 .stack-list li::after {
   content: "·";
-  color: var(--stone);
+  color: var(--stone-deep);
   margin-left: var(--space-sm);
 }
 

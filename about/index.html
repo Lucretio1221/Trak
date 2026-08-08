@@ -4,11 +4,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About — Cuciuvan Lucas-Florian</title>
-  <meta name="description" content="TODO: meta description — Faza 4.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500&family=Source+Serif+4:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <meta name="description" content="TODO: meta description — se scrie odată cu bio-ul.">
+  <link rel="canonical" href="https://TODO-domain.netlify.app/about/">
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#123A2E">
+
+  <!-- Fonturi self-hostate: fără request extern, fără stylesheet care blochează
+       randarea. Preîncărcăm doar cele două fețe de pe primul ecran. -->
+  <link rel="preload" href="/assets/fonts/familjen-grotesk-500-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/source-serif-4-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/styles.css">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://TODO-domain.netlify.app/about/">
+  <meta property="og:title" content="About — Cuciuvan Lucas-Florian">
+  <meta property="og:description" content="TODO: meta description — se scrie odată cu bio-ul.">
+  <meta property="og:image" content="https://TODO-domain.netlify.app/assets/images/og-default.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en">
+  <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -34,7 +50,7 @@
 
     <section class="section--divider">
       <div class="wrap case-body">
-        <span class="eyebrow">CV</span>
+        <h2 class="eyebrow">CV</h2>
         <p class="todo">TODO: buton „Download CV (PDF)" — adaugă <code>assets/cv.pdf</code> și activează link-ul.</p>
       </div>
     </section>
@@ -42,7 +58,7 @@
 
   <footer class="site-footer">
     <div class="wrap site-footer__inner">
-      <span class="eyebrow eyebrow--on-dark">Contact</span>
+      <h2 class="eyebrow eyebrow--on-dark">Contact</h2>
       <p class="site-footer__email todo-inline">
         <a href="mailto:TODO@example.com">TODO@example.com</a>
       </p>
