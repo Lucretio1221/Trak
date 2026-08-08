@@ -102,11 +102,11 @@
   color-scheme: light;
 
   /* Culori */
-  --ink: #123A2E;
-  --ink-soft: #3C5A4F;
+  --ink: #0F3460;
+  --ink-soft: #3C556F;
   --paper: #F6F7F4;
   --paper-warm: #EEEFE9;
-  --amber: #F0A500;
+  --gold: #C9A227;
   --stone: #C9C6BC;
   /* Varianta lizibilă a lui stone. stone pur dă 1.59:1 pe hârtie — bun
      pentru hairlines și puncte decorative, prea slab oriunde un semn
@@ -139,10 +139,10 @@
   --content-max: 68rem;
   --hairline: 1px solid var(--stone);
 
-  /* Inelul de focus. Amber pe fundal deschis dă 1.94:1 — sub pragul de
+  /* Inelul de focus. Aurul pe fundal deschis dă 2.25:1 — sub pragul de
      3:1 cerut pentru indicatori non-text — deci pe hârtie folosim ink
-     (11.69:1). Pe banda închisă ink ar fi invizibil, așa că acolo
-     tokenul se inversează în amber (6.04:1 pe ink) și accentul de firmă
+     (11.62:1). Pe banda închisă ink ar fi invizibil, așa că acolo
+     tokenul se inversează în aur (5.17:1 pe ink) și accentul de firmă
      rămâne prezent exact unde trece contrastul. */
   --focus-ring: var(--ink);
 }
@@ -329,14 +329,14 @@ button:focus-visible,
 
 .site-nav a:hover,
 .site-nav a[aria-current="page"] {
-  border-bottom-color: var(--amber);
+  border-bottom-color: var(--gold);
 }
 
-/* ---------- Footer (banda închisă pe verde) ---------- */
+/* ---------- Footer (banda închisă pe albastru) ---------- */
 .site-footer {
   background: var(--ink);
   color: var(--paper);
-  --focus-ring: var(--amber);
+  --focus-ring: var(--gold);
 }
 
 .site-footer a {
@@ -346,7 +346,7 @@ button:focus-visible,
 }
 
 .site-footer a:hover {
-  text-decoration-color: var(--amber);
+  text-decoration-color: var(--gold);
 }
 
 .site-footer__inner {
@@ -429,7 +429,7 @@ a.menu-line:hover .menu-line__name {
 }
 
 a.menu-line:hover .menu-line__dots {
-  border-bottom-color: var(--amber);
+  border-bottom-color: var(--gold);
 }
 
 /* ---------- Hero ---------- */
@@ -507,7 +507,7 @@ a.menu-line:hover .menu-line__dots {
 }
 
 .proof-card:hover .proof-card__media {
-  border-color: var(--amber);
+  border-color: var(--gold);
 }
 
 .proof-card:hover .menu-line__name {
@@ -515,7 +515,7 @@ a.menu-line:hover .menu-line__dots {
 }
 
 .proof-card:hover .menu-line__dots {
-  border-bottom-color: var(--amber);
+  border-bottom-color: var(--gold);
 }
 
 /* ---------- Servicii ---------- */
@@ -548,7 +548,7 @@ a.menu-line:hover .menu-line__dots {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   text-decoration: none;
-  border-bottom: 1px solid var(--amber);
+  border-bottom: 1px solid var(--gold);
   padding-bottom: 0.15em;
 }
 
@@ -595,7 +595,7 @@ img.proof-card__media {
   top: 0.65em;
   width: 5px;
   height: 5px;
-  background: var(--amber);
+  background: var(--gold);
 }
 
 .case-body ul:not(.stack-list) li + li {
@@ -621,9 +621,9 @@ img.proof-card__media {
   margin: 0;
 }
 
-/* ---------- TODO — marcaj vizibil, amber doar ca linie ---------- */
+/* ---------- TODO — marcaj vizibil, aurul doar ca linie ---------- */
 .todo {
-  border-left: 3px solid var(--amber);
+  border-left: 3px solid var(--gold);
   background: var(--paper-warm);
   padding: var(--space-sm) var(--space-md);
   color: var(--ink-soft);
@@ -640,7 +640,7 @@ img.proof-card__media {
 }
 
 .todo-inline {
-  border-bottom: 1px dotted var(--amber);
+  border-bottom: 1px dotted var(--gold);
   font-style: normal;
 }
 

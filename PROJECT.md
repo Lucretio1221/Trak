@@ -201,6 +201,24 @@ Eu aleg una, apoi se construiește exact pe ea.
 **Aleasă: Direcția A — „Menu".** Tipografie de meniu tipărit și firmă de
 local.
 
+Paleta finală, după trecerea de la verde la albastru cu accente aurii.
+Sursa de adevăr rămâne `assets/styles.css`; raportul e față de hârtie,
+sau față de `--ink` acolo unde e marcat:
+
+| token          | hex       | rol                                    | contrast |
+|----------------|-----------|----------------------------------------|----------|
+| `--ink`        | `#0F3460` | albastru-cerneală, text principal      | 11.62:1  |
+| `--ink-soft`   | `#3C556F` | text secundar                          | 7.18:1   |
+| `--paper`      | `#F6F7F4` | fundal                                 | —        |
+| `--paper-warm` | `#EEEFE9` | bandă alternativă (cald, intenționat)  | —        |
+| `--gold`       | `#C9A227` | accent de firmă — doar linii și marcaje | 5.17:1 pe ink |
+| `--stone`      | `#C9C6BC` | hairlines, puncte decorative           | decorativ |
+| `--stone-deep` | `#7F7B70` | stone lizibil, unde un semn se citește | 3.93:1   |
+
+Regula despre accent rămâne neschimbată: aurul nu se folosește niciodată
+ca text pe fundal deschis (2.25:1, nu trece). Pe banda închisă trece, și
+acolo devine inelul de focus.
+
 ### Pragul de calitate — nenegociabil
 
 - Responsive până la 360px lățime, testat, nu presupus
