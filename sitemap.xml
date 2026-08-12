@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  TODO — la primul deploy: înlocuiește TODO-domain.netlify.app cu domeniul
+  real, aici, în robots.txt și în canonical/og:url din fiecare pagină.
+  Un singur find & replace pe tot proiectul.
+
+  /work/_template/ lipsește intenționat: e un șablon, are noindex și e
+  blocat din robots.txt.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://TODO-domain.netlify.app/</loc>
+    <lastmod>2026-08-08</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://TODO-domain.netlify.app/work/</loc>
+    <lastmod>2026-08-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://TODO-domain.netlify.app/work/cuttracker/</loc>
+    <lastmod>2026-08-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://TODO-domain.netlify.app/work/restaurant-pizzerie/</loc>
+    <lastmod>2026-08-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://TODO-domain.netlify.app/work/liceu/</loc>
+    <lastmod>2026-08-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://TODO-domain.netlify.app/about/</loc>
+    <lastmod>2026-08-08</lastmod>
+    <priority>0.5</priority>
+  </url>
+</urlset>

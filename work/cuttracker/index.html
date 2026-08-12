@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CutTracker — Cuciuvan Lucas-Florian</title>
+  <meta name="description" content="A web app for tracking a bodybuilding cut — solo, with an AI coach, or under a real coach managing multiple athletes.">
+  <link rel="canonical" href="https://TODO-domain.netlify.app/work/cuttracker/">
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#0F3460">
+
+  <!-- Fonturi self-hostate: fără request extern, fără stylesheet care blochează
+       randarea. Preîncărcăm doar cele două fețe de pe primul ecran. -->
+  <link rel="preload" href="/assets/fonts/familjen-grotesk-500-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/source-serif-4-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/styles.css">
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://TODO-domain.netlify.app/work/cuttracker/">
+  <meta property="og:title" content="CutTracker — Cuciuvan Lucas-Florian">
+  <meta property="og:description" content="A web app for tracking a bodybuilding cut — solo, with an AI coach, or under a real coach managing multiple athletes.">
+  <meta property="og:image" content="https://TODO-domain.netlify.app/assets/images/og-default.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="/">Cuciuvan Lucas-Florian</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/work/" aria-current="page">Work</a>
+        <a href="/about/">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- 1. Nume + o propoziție -->
+    <section class="section section--tight">
+      <div class="wrap case-body">
+        <span class="eyebrow">Case study</span>
+        <h1 class="page-title">CutTracker</h1>
+        <p class="hero__sub">A web app for tracking a bodybuilding cut — solo, with an AI coach, or under a real coach managing multiple athletes.</p>
+
+        <!-- 2. Link live + link repo (dacă e public) -->
+        <div class="case-links">
+          <span class="todo-inline">TODO: live link</span>
+          <span class="todo-inline">TODO: repo link (dacă e public)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Screenshot mare, real -->
+    <section class="section--divider">
+      <div class="wrap">
+        <div class="case-shot">TODO: screenshot real, din site-ul live</div>
+      </div>
+    </section>
+
+    <!-- 4. Context -->
+    <section class="section section--divider">
+      <div class="wrap case-body">
+        <h2 class="eyebrow">Context</h2>
+        <p class="todo">TODO: care era situația înainte de CutTracker — cum își urmăreau atleții/coach-ii progresul până acum, ce lipsea concret.</p>
+      </div>
+    </section>
+
+    <!-- 5. Ce am construit -->
+    <section class="section section--divider">
+      <div class="wrap case-body">
+        <h2 class="eyebrow">What I built</h2>
+        <ul>
+          <li>Two modes: Solo (personal tracking + AI coach) and Coach→Athlete, where a coach manages multiple athletes, defines check-in templates, and gives feedback</li>
+          <li>Inline, spreadsheet-style editing for daily tracking data</li>
+          <li>Automatic weekly macro calculations</li>
+          <li>AI-generated weekly reports</li>
+          <li>AI video analysis of physique photos</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 6. Stack -->
+    <section class="section section--divider">
+      <div class="wrap case-body">
+        <h2 class="eyebrow">Stack</h2>
+        <ul class="stack-list">
+          <li>React</li>
+          <li>Vite</li>
+          <li>Supabase (auth, database, storage)</li>
+          <li>Anthropic Claude API</li>
+          <li>Netlify</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 7. Rezultat -->
+    <section class="section section--divider">
+      <div class="wrap case-body">
+        <h2 class="eyebrow">Result</h2>
+        <p class="todo">TODO: cifră dacă există (ex: nr. utilizatori activi, check-in-uri procesate), altfel un fapt verificabil.</p>
+      </div>
+    </section>
+
+    <!-- 8. Rolul meu -->
+    <section class="section section--divider">
+      <div class="wrap case-body">
+        <h2 class="eyebrow">My role</h2>
+        <p class="todo">TODO: a fost lucrat singur sau cu cineva? Dacă da, cine ce a făcut, explicit.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <h2 class="eyebrow eyebrow--on-dark">Contact</h2>
+      <p class="site-footer__email todo-inline">
+        <a href="mailto:TODO@example.com">TODO@example.com</a>
+      </p>
+      <p class="site-footer__meta todo-inline">TODO: location / availability line.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

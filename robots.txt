@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Fișiere de lucru, nu pagini publice.
+Disallow: /work/_template/
+Disallow: /assets/og-source.html
+
+Sitemap: https://TODO-domain.netlify.app/sitemap.xml
